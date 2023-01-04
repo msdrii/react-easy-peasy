@@ -1,5 +1,6 @@
-import logo from './logo.svg';
+import logo from './mc_logo_no_text.jpg';
 import './App.css';
+import { ApiFetch } from './components/ApiFetch';
 
 function App() {
   return (
@@ -7,16 +8,22 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Click below URL and be the one of us.
         </p>
         <a
           className="App-link"
-          href="https://reactjs.org"
+          href="https://mothercomputer.co.jp"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          Learn about Mother Computer!
         </a>
+        <h1>
+          This is your Birth Stone!
+        </h1>
+        <p>
+          <ApiFetch />
+        </p>
       </header>
     </div>
   );
